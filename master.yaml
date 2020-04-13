@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: "1.0.0-oas3"
+  version: "1.0.0"
   title: Lab6 SVM in an API
   description: A simple service to perform SVM on the IRIS dataset
   termsOfService: 'http://swagger.io/terms/'
