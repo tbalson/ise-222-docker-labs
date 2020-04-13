@@ -6,6 +6,9 @@ all: start
 docker-all: docker-build docker-start
 	@echo "DONE"
 
+docker-alli: docker-build docker-inter
+	@echo "Done"
+
 docker-build:
 	@echo "building the image from docker file..."
 	docker build --no-cache --pull -t svmtest .
@@ -13,7 +16,11 @@ docker-build:
 
 docker-start:
 	@echo "starting the NEW service in container..."
-	docker run -v /home/:/home/ -p 8080:8080 svmtest
+	docker run -p 8080:8080 svmtest
+
+docker-inter:
+	@echo "starting service interactively..."
+	docker run -p 8080:8080 -it svmtest
 
 service:
 	@echo "creating the service..."
