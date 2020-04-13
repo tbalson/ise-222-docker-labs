@@ -7,7 +7,7 @@ RUN apt-get install -y git-core
 RUN apt-get install -y curl
 
 RUN apt install -y python3.7
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 10
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7
 RUN update-alternatives --config python
 RUN apt-get install -y python3.7-distutils
 RUN apt-get install -y python3.7-dev
