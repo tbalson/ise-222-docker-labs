@@ -25,11 +25,11 @@ RUN pip install -U pip setuptools
 RUN pip install psutil
 
 #RUN git clone https://github.com/tbalson/cpu_test.git
-RUN git clone 
-WORKDIR cpu_test/
-COPY . /cpu_test
+RUN git clone https://github.com/tbalson/ise-222-docker-labs.git 
+WORKDIR ise-222-docker-labs
+COPY . /ise-222-docker-labs
 
-#RUN git pull
+RUN git pull
 
 EXPOSE 8080
 
