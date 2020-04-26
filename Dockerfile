@@ -1,6 +1,7 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 MAINTAINER Tyler Balson <tbalson@iu.edu>
 
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt-get install -y apt-utils
 
